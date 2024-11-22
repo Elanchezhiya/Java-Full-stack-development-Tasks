@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Input Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        form input, 
+        form select, 
+        form textarea, 
+        form button {
+            width: calc(100% - 20px); /* Adjust for padding */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        form input[type="checkbox"], 
+        form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 12px;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Elements</h1>
+    <form>
+        <label for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter text">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+
+        <label for="number">Number</label>
+        <input type="number" id="number" placeholder="Enter a number">
+
+        <label>
+            <input type="checkbox"> Checkbox
+        </label>
+
+        <label>
+            <input type="radio" name="example"> Radio
+        </label>
+
+        <label for="file">File</label>
+        <input type="file" id="file">
+
+        <label for="range">Range</label>
+        <input type="range" id="range">
+
+        <label for="color">Color</label>
+        <input type="color" id="color">
+
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <label for="time">Time</label>
+        <input type="time" id="time">
+
+        <label for="dropdown">Dropdown</label>
+        <select id="dropdown">
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+
+        <label for="textarea">Textarea</label>
+        <textarea id="textarea" rows="4" placeholder="Enter your text here"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

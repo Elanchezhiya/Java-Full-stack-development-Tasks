@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        form input[type="checkbox"],
+        form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Styled Form</h2>
+        <label for="text">Text:</label>
+        <input type="text" id="text" value="Default Text">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="example@example.com">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" value="password123">
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" value="10">
+
+        <label>
+            <input type="checkbox" checked> Checkbox
+        </label>
+
+        <label>
+            <input type="radio" name="example" value="default" checked> Radio
+        </label>
+
+        <label for="dropdown">Dropdown:</label>
+        <select id="dropdown">
+            <option selected>Default Option</option>
+            <option>Option 2</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
