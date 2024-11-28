@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Page</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d9e4d7; /* Light muted green */
+    }
+
+    /* Header Section */
+    header {
+      background-color: #20343c; /* Dark teal */
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 673px;
+    }
+
+    /* Layout Container */
+    .container {
+    max-width: 1415px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 97px;
+    }
+
+    /* Sidebar Section */
+    .sidebar {
+      background-color: #333333; /* Dark gray */
+      height: 554px;
+      border-radius: 8px;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-right: 123px;
+      
+    }
+
+    .search-bar input {
+        width: 70%;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333333;
+    }
+
+    /* Repository Cards Section */
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .repo-card {
+        background-color: #333333;
+    border-radius: 8px;
+    height: 130px;
+    width: 68%;
+    }
+
+    /* Wide Content */
+    .wide-content {
+        grid-column: 1 / -1;
+    background-color: #333333;
+    border-radius: 8px;
+    height: 175px;
+    width: 90%;
+
+    }
+    img{
+        margin-left: 46px;
+        filter: invert(100%) sepia(100%) hue-rotate(180deg) saturate(200%) brightness(150%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="30">
+    <h1>GITHUB</h1>
+  </header>
+
+  <div class="container">
+   
+
+    <!-- Sidebar -->
+    <div class="sidebar"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+         <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="repo-card"></div>
+      <div class="repo-card"></div>
+      <div class="repo-card"></div>
+        <!-- Wide Content -->
+    <div class="wide-content"></div>
+    </div>
+
+  
+  </div>
+</body>
+</html>
