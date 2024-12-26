@@ -1,0 +1,22 @@
+body {
+            background-image: url('https://img.freepik.com/free-photo/product-backdrop-empty-wooden-floor-with-green-wall-plant-shadow_53876-128779.jpg?t=st=1735228822~exp=1735232422~hmac=947b4f68c28819f0029a30ce86d43d2e9d748cb25ee9e1c8ac677ee612e6744d&w=996'); /* Replace with your actual image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Ensures text is visible on dark background */
+        }
+        .table {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for table */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            flex: 1;
+            text-align: center;
+        }
